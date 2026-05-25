@@ -1,0 +1,18 @@
+/node_modules
+/dist
+/.env
+/.env.local
+/.env.development
+
+#ignoring all .env and node_modules files in any subdirectory
+**/.env
+**/node_modules 
+**/dist
+
+# i want to ignore all .env files but not the ones in the root directory
+# To ignore all .env files except the ones in the root directory, you can use the
+# following pattern in your .gitignore file:    
+.env
+!/.env
+***/dist
+***/nodemodules
